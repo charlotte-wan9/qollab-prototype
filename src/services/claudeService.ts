@@ -97,9 +97,10 @@ export async function generateCueDescription(
   return buildPlaceholderDescription(cue, scriptBlock)
 }
 
+const BASE = import.meta.env.BASE_URL ?? '/'
 const PLACEHOLDER_IMAGES = [
-  '/placeholders/stage1.jpg',
-  '/placeholders/stage2.jpg',
+  `${BASE}placeholders/stage1.jpg`,
+  `${BASE}placeholders/stage2.jpg`,
 ]
 
 export async function generateSceneVisualization(
