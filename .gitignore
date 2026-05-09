@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables — never commit real keys
+.env
+.env.local
+.env.*.local
+
+# Supabase local dev
+supabase/.temp/
+
+# TypeScript build info
+tsconfig.tsbuildinfo
+
+# Claude Code local settings
+.claude/settings.local.json
+
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
